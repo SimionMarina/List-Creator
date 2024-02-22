@@ -1,0 +1,128 @@
+* {
+  /* border: 1px solid black; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  border: none;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 100px;
+}
+.header_section {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.main_section {
+  grid-area: main;
+  display: flex;
+  gap: 50px;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+.footer_section {
+  grid-area: footer;
+}
+.header_controls_container {
+  width: 60%;
+}
+
+.logo_image {
+  width: 75px;
+  height: 75px;
+  background-color: transparent;
+}
+.page_title {
+  color: #fc5d3d;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+.list_name_input {
+  border: 2px solid #72c2e9;
+  width: 20%;
+  padding: 10px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+.add_list_btn {
+  border: 2px solid #72c2e9;
+  background-color: #72c2e9;
+  color: #fff;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+/* Classes add with js */
+.list_container {
+  border: 2px solid #fc5d3d;
+  padding: 15px;
+  border-radius: 10px;
+  list-style-type: none;
+  width: 20%;
+}
+.list_title {
+  color: #fc5d3d;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.remove_list_button {
+  float: right;
+  border: 2px solid #fc5d3d;
+  background-color: #fc5d3d;
+  color: #fff;
+  padding: 0 10px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.item_input {
+  border: 2px solid #72c2e9;
+  width: 70%;
+  padding: 10px;
+  height: 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Verdana, Tahoma, sans-serif;
+  appearance: none;
+}
+.item_input:focus {
+  outline: none;
+  border-color: #72c2e9;
+}
+.add_item_button {
+  border: 2px solid #72c2e9;
+  background-color: #72c2e9;
+  color: #fff;
+  padding: 0 10px;
+  height: 30px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.delete_item_button {
+  float: right;
+  border: none;
+  background-color: transparent;
+  margin-right: 50px;
+  color: red;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.list_item {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: Verdana, Tahoma, sans-serif;
+}

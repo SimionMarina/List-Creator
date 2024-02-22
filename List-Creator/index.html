@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./scripts/list.js" defer></script>
+    <title>To do list</title>
+  </head>
+  <body>
+    <header class="header_section">
+      <div class="header_logo_container">
+        <img class="logo_image" src="./images/logo.png" alt="logo" />
+      </div>
+
+      <div class="header_title_container">
+        <h1 class="page_title">LIST CREATOR</h1>
+      </div>
+
+      <div class="header_controls_container">
+        <input type="text" id="list_name_input" class="list_name_input" />
+        <button onclick="AddList()" class="add_list_btn">Add List</button>
+        <button onclick="removeAllLists()" class="add_list_btn">Remove List</button>
+      </div>
+    </header>
+
+    <main class="main_section" id="main_section"></main>
+
+    <footer class="footer_section">footer</footer>
+  </body>
+</html>
